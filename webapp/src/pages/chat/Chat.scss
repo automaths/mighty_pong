@@ -1,0 +1,92 @@
+#div-message-chat {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#nickname-user-chat:hover {
+    cursor: pointer;
+}
+
+#dest-private-chat {
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#avatar-dest-private-chat {
+    border-radius: 35px;
+    width: 50px;
+}
+
+#div-avatar-private-chat {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#name-dest-private-chat {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.chat-item {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content-message-right {
+    width: 30%;
+    background-color: #0078ff;
+    color: white;
+    padding: 15px;
+    margin: 0.5rem;
+    border-radius: 20px;
+    margin-left: auto;
+}
+
+.content-message-left {
+    width: 30%;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    padding: 15px;
+    margin: 0.5rem;
+    border-radius: 20px;
+    margin-right: auto;
+}
+
+.nickname-message-right {
+    width: 30%;
+    margin-left: auto;
+    text-align: right;
+    font-size: 10px;
+}
+
+.nickname-message-left {
+    width: 30%;
+    margin-right: auto;
+    text-align: left;
+    font-size: 10px;
+}
+
+#div-submit-button {
+    margin-top: 2rem;
+    height: 10%;
+    width: 100%;
+}
+
+#answer-chat-input {
+    width: 75vw;
+}
+
+#button-answer-chat-submit {
+    margin-left: 1vw;
+    width: 5vw;
+}
+
+.invitation-chat-ling {
+    cursor: pointer;
+}

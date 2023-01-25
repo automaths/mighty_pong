@@ -1,0 +1,33 @@
+.login-email-page {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+.login-form {
+    background-color: #eeeeee;
+    padding: 20px 30px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+h2 {
+    color: grey;
+    font-size: 2em;
+    padding-bottom: 15px;
+}
+
+#login-email-submit {
+    width: 300px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+#login-email-submit:hover {
+    color: grey;
+    background-color: white;
+}

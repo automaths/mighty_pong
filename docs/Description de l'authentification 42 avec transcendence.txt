@@ -1,0 +1,11 @@
+title Description de l'authentification 42 avec transcendence
+
+Frontend->SSO 42: Redirection sur le SSO 42 (/authorize)\n avec les paramètres de l'application
+SSO 42->Frontend: Redirection sur l'URL de retour \n avec l'authorization_code
+Frontend->Backend: Transmission du code au backend avec la route /users/auth
+Backend->SSO 42: Envoie une requête sur le SSO 42 (/token)
+SSO 42->Backend: Reception du access token, du refresh token et expiration
+Backend->Backend: Stockage des informations reçues
+Backend->API 42: Récupération des informations de l'utilisateur sur /me \n en cas de 1ere connexion
+API 42->Backend: Envoi des informations demandées
+Backend->Frontend: Envoi de l'access token

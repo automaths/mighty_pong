@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "api",
+    "webapp"
+  ],
+  "devDependencies": {
+    "lerna": "^6.1.0"
+  },
+  "scripts": {
+    "start": "npx lerna run start"
+  }
+}

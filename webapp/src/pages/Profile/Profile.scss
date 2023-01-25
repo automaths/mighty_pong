@@ -1,0 +1,36 @@
+#avatar-display {
+    width: 11rem;
+    height: 11rem;
+}
+
+#nickname {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font: small-caps 2rem sans-serif;
+}
+
+#edit-button {
+    margin: auto;
+    color: rgb(163, 163, 163);
+    display: block;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    font: 0.5rem sans-serif;
+}
+
+#edit-button:hover {
+    color: rgb(255, 255, 255);
+    background-color:rgb(134, 134, 134);
+}
+
+#achievements {
+    display: block;
+    position: relative;
+    bottom: 10rem;
+    margin-left: 19%;
+    font-size: 1.5rem;
+}
+
+#statistics {
+    position: relative;
+}

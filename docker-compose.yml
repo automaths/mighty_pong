@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:14
+    restart: always
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - "5432:5432"
+  api:
+    build: api/
+    restart: always
+    depends_on:
+      - postgres
+    ports:
+      - '5000:5000'
+    environment:
+      - POSTGRES_HOST=postgres
+  webapp:
+    build: webapp/
+    restart: always
+    depends_on:
+      - api
+    ports:
+      - '3000:3000'

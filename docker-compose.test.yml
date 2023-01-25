@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: db-under-test
+    image: postgres:14
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./database/:/database/
+      - ./database/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d/
+  db-test:
+    container_name: db-test
+    image: subzerocloud/pgtap:pg11
+    environment:
+      - HOST=postgres
+      - USER=postgres
+      - DATABASE=postgres
+    volumes:
+      - ./database/tests/:/test

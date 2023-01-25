@@ -1,0 +1,72 @@
+{
+  "name": "webapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.15",
+    "@mui/material": "^5.10.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.3",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@types/uuid": "9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "axios": "^1.1.3",
+    "chat-ui-react": "0.3.0",
+    "cypress": "11.2.0",
+    "date-fns": "^2.29.3",
+    "eslint": "^8.28.0",
+    "eslint-plugin-react": "^7.31.11",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-countdown-circle-timer": "3.1.0",
+    "react-dom": "^18.2.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^9.1.1",
+    "sass": "^1.56.1",
+    "socket.io-client": "^4.5.3",
+    "typescript": "^4.8.4",
+    "uuid": "9.0.0",
+    "universal-cookie": "4.0.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "yarn run eslint '**/**.tsx' '**/**.*js' --ignore-pattern build/",
+    "test:e2e": "yarn cypress run",
+    "test:open": "yarn cypress open",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "jest-puppeteer": "^6.1.1"
+  }
+}
